@@ -18,19 +18,28 @@
     </h1>
     <div class="game-area">
         <div class="controles-area">
-            <button class="btn btn--big btn--green">
+            <button data-type="greaterthan" class="btn btn--big btn--green">
                 <i class="fa-solid fa-greater-than"></i>
             </button>
-            <button class="btn btn--big btn--red">
+            <button data-type="equal" class="btn btn--big btn--red">
                 <i class="fa-solid fa-equals"></i>
 
             </button>
-            <button class="btn btn--big btn--green">
+            <button data-type="lessthan" class="btn btn--big btn--green">
                 <i class="fa-solid fa-less-than"></i>
 
             </button>
 
         </div>
+        <div class="question-area">
+            <span id="operand1">0</span>
+            <span id="operator">x</span>
+            <span id="operand2">0</span>
+            <span>=</span>
+            <p class="answer-message">Enter Answer:</p>
+            <input id="answer-box" type="text">
+        </div>
+        <button data-type="Submit" class="btn btn--gray">Submit Answer</button>
     </div>
 
     <div class="score-area">
