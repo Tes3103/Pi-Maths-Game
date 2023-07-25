@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
     for (let button of buttons) {
         button.addEventListener("click", function() {
             if (this.getAttribute("data-type") === "submit") {
-                alert("you clicked submit!");
+                checkAnswer();
             } else {
                 let gameType = this.getAttribute("data-type");
                 runGame(gameType);
@@ -36,13 +36,41 @@ function runGame(gameType) {
 
 }
 
+/**
+ * 
+ * Checks the answer aganist the first element in
+ * the returned calculateCorrectAnswer array
+ */
 
 function checkAnswer() {
+    let userAnswer = parseFloat(document.getElementById("answer-box").value);
+    let calculatedAnswer = calculateCorrectAnswer();
+    let isCorrect = userAnswer === calculatedAnswer[0];
 
-}
+    if (isCorrect) {
+        alert("You are correct!")
+    } else {
+        alert (`you answered ${userAnswer}. The correct answer was ${calculatedAnswer[0]}!`);
+    }
 
+    runGame(calculatedAnswer[1]);
+} 
+
+/**
+ * Gets the operands the (numbers) and the operator (greaterthan, equal, lessthan)
+ * directely from the dom, and returnes the correct answer
+ */
 
 function calculateCorrectAnswer() {
+    let operand1 = parseInt(document.getElementById('operand1').innerText);
+    let operand2 = parseInt(document.getElementById('operand2').innerText);
+    let operator = document.getElementById('operator').innerText;
+    if (operator === ">") {
+        return[operand1 > operand2, "greaterthan"];
+    } else {
+        alert (`unimplemented operator ${operator}`);
+        throw `unimplemented operator ${operator}, Aborting!`;
+    }
     
 }
 
