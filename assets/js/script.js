@@ -29,7 +29,14 @@ function runGame(gameType) {
 
     if (gameType === "greaterthan") {
         displayGreaterthanQuestion(num1, num2);
-    }else {
+
+    } else if (gameType === "equal") {
+        displayEqualQuestion(num1, num2);
+
+    } else if (gameType === "lessthan") {
+        displayLessthanQuestion(num1, num2);
+
+    } else {
         alert(`unknown game type: ${gameType}`);
         throw `unknown game type: ${gameType}. Aborting!`;
     }
@@ -43,14 +50,16 @@ function runGame(gameType) {
  */
 
 function checkAnswer() {
-    let userAnswer = Boolean(document.getElementById("answer-box").value);
+    let userAnswer = parseInt(document.getElementById("answer-box").value);
     let calculatedAnswer = calculateCorrectAnswer();
     let isCorrect = userAnswer === calculatedAnswer[0];
 
     if (isCorrect) {
         alert("You are correct!")
+        incremetScore();
     } else {
         alert (`you answered ${userAnswer}. The correct answer was ${calculatedAnswer[0]}!`);
+        incremetWrongAnswers();
     }
 
     runGame(calculatedAnswer[1]);
@@ -66,7 +75,11 @@ function calculateCorrectAnswer() {
     let operand2 = parseInt(document.getElementById('operand2').innerText);
     let operator = document.getElementById('operator').innerText;
     if (operator === ">") {
-        return[operand1 > operand2, "greaterthan"];
+        return Boolean[operand1 > operand2, "greaterthan"];
+    } else if (operator === "=") {
+        return Boolean[operand1 = operand2, "equal"];
+    } else if (operator === "<") {
+        return Boolean[operand1 < operand2, "lessthan"];
     } else {
         alert (`unimplemented operator ${operator}`);
         throw `unimplemented operator ${operator}. Aborting!`;
@@ -74,25 +87,46 @@ function calculateCorrectAnswer() {
     
 }
 
+/**
+ * Get the current score from the DOM and increments it by 1
+ */
+
 function incremetScore() {
-    
+    let oldscore = Boolean(document.getElementById("correct").innerText);
+    document.getElementById("correct").innerText = ++oldscore;
+
 }
 
+/**
+ * Get the current tally of incorrect answers from the DOM and increments it by 1
+ */
+
 function incremetWrongAnswers() {
+    let oldscore = Boolean(document.getElementById("incorrect").innerText);
+    document.getElementById("incorrect").innerText = ++oldscore;
     
 }
 
 function displayGreaterthanQuestion(operand1, operand2) {
+
     document.getElementById('operand1').textContent = operand1;
     document.getElementById('operand2').textContent = operand2;
     document.getElementById('operator').textContent = ">";
     
 }
 
-function displayEqualQuestion() {
+function displayEqualQuestion(operand1, operand2) {
+
+    document.getElementById('operand1').textContent = operand1;
+    document.getElementById('operand2').textContent = operand2;
+    document.getElementById('operator').textContent = "=";
     
 }
 
-function displayLessthanQuestion() {
+function displayLessthanQuestion(operand1, operand2) {
+
+    document.getElementById('operand1').textContent = operand1;
+    document.getElementById('operand2').textContent = operand2;
+    document.getElementById('operator').textContent = "<";
     
 }
