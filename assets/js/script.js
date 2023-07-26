@@ -43,7 +43,7 @@ function runGame(gameType) {
  */
 
 function checkAnswer() {
-    let userAnswer = parseFloat(document.getElementById("answer-box").value);
+    let userAnswer = Boolean(document.getElementById("answer-box").value);
     let calculatedAnswer = calculateCorrectAnswer();
     let isCorrect = userAnswer === calculatedAnswer[0];
 
@@ -69,7 +69,7 @@ function calculateCorrectAnswer() {
         return[operand1 > operand2, "greaterthan"];
     } else {
         alert (`unimplemented operator ${operator}`);
-        throw `unimplemented operator ${operator}, Aborting!`;
+        throw `unimplemented operator ${operator}. Aborting!`;
     }
     
 }
