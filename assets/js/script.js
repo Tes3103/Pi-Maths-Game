@@ -43,16 +43,38 @@ function runGame(gameType) {
 
 }
 
-/**
- * 
- * Checks the answer aganist the first element in
- * the returned calculateCorrectAnswer array
- */
+function displayValue() {
+    let value = document.getElementById("answer-box").value;
+    if (value != null && value.toLowerCase() === 'true') {
+        return true;
+    } else if (value != null && value.toLowerCase() === 'false') {
+        return true;
+    } else {
+        document.getElementById("message").innerText = "Please enter true or false";
+        return null;
 
+    }
+}
+
+function getUserAnswer() {
+    let value = document.getElementById("answer-box").value;
+    if (value != null && value.toLowerCase() === 'true') {
+        return true;
+    } else if ( value != null && value.toLowerCase() === 'false') {
+        return true;
+
+    } else {
+        document.getElementById("message").innerText = "Invalid value";
+
+    }
+}
 function checkAnswer() {
-    let userAnswer = parseInt(document.getElementById("answer-box").value);
+    let userAnswer = getUserAnswer();
     let calculatedAnswer = calculateCorrectAnswer();
-    let isCorrect = userAnswer === calculatedAnswer[0];
+    if (userAnswer === null) {
+        return;
+       }
+    let isCorrect = userAnswer === calculatedAnswer;
 
     if (isCorrect) {
         alert("You are correct!")
@@ -75,11 +97,11 @@ function calculateCorrectAnswer() {
     let operand2 = parseInt(document.getElementById('operand2').innerText);
     let operator = document.getElementById('operator').innerText;
     if (operator === ">") {
-        return Boolean[operand1 > operand2, "greaterthan"];
+        return operand1 > operand2;
     } else if (operator === "=") {
-        return Boolean[operand1 = operand2, "equal"];
+        return operand1 = operand2;
     } else if (operator === "<") {
-        return Boolean[operand1 < operand2, "lessthan"];
+        return operand1 < operand2;
     } else {
         alert (`unimplemented operator ${operator}`);
         throw `unimplemented operator ${operator}. Aborting!`;
@@ -87,12 +109,20 @@ function calculateCorrectAnswer() {
     
 }
 
+function dVal() {
+    let val = displayValue();
+    alert(val);
+    document.getElementById('user-box').value = val;
+  };
+  
+  document.getElementById('submit-btn').addEventListener('click', dVal);
+
 /**
  * Get the current score from the DOM and increments it by 1
  */
 
 function incremetScore() {
-    let oldscore = Boolean(document.getElementById("correct").innerText);
+    let oldscore = (document.getElementById("correct").innerText);
     document.getElementById("correct").innerText = ++oldscore;
 
 }
@@ -102,7 +132,7 @@ function incremetScore() {
  */
 
 function incremetWrongAnswers() {
-    let oldscore = Boolean(document.getElementById("incorrect").innerText);
+    let oldscore = (document.getElementById("incorrect").innerText);
     document.getElementById("incorrect").innerText = ++oldscore;
     
 }
