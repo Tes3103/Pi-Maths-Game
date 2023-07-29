@@ -27,13 +27,13 @@ function runGame(gameType) {
     let num1 = Math.floor(Math.random() *20);
     let num2 = Math.floor(Math.random() *20);
 
-    if (gameType === "greaterthan") {
+    if (gameType === "greater-than") {
         displayGreaterthanQuestion(num1, num2);
 
-    } else if (gameType === "equal") {
+    } else if (gameType === "equals") {
         displayEqualQuestion(num1, num2);
 
-    } else if (gameType === "lessthan") {
+    } else if (gameType === "less-than") {
         displayLessthanQuestion(num1, num2);
 
     } else {
@@ -48,7 +48,7 @@ function displayValue() {
     if (value != null && value.toLowerCase() === 'true') {
         return true;
     } else if (value != null && value.toLowerCase() === 'false') {
-        return true;
+        return false;
     } else {
         document.getElementById("message").innerText = "Please enter true or false";
         return null;
@@ -61,7 +61,7 @@ function getUserAnswer() {
     if (value != null && value.toLowerCase() === 'true') {
         return true;
     } else if ( value != null && value.toLowerCase() === 'false') {
-        return true;
+        return false;
 
     } else {
         document.getElementById("message").innerText = "Invalid value";
@@ -80,7 +80,7 @@ function checkAnswer() {
         alert("You are correct!")
         incremetScore();
     } else {
-        alert (`you answered ${userAnswer}. The correct answer was ${calculatedAnswer[0]}!`);
+        alert (`you answered ${userAnswer}. The correct answer was ${calculatedAnswer}!`);
         incremetWrongAnswers();
     }
 
@@ -93,8 +93,8 @@ function checkAnswer() {
  */
 
 function calculateCorrectAnswer() {
-    let operand1 = parseInt(document.getElementById('operand1').innerText);
-    let operand2 = parseInt(document.getElementById('operand2').innerText);
+    let operand1 = document.getElementById('operand1').innerText;
+    let operand2 = document.getElementById('operand2').innerText;
     let operator = document.getElementById('operator').innerText;
     if (operator === ">") {
         return operand1 > operand2;
@@ -113,7 +113,7 @@ function dVal() {
     let val = displayValue();
     alert(val);
     document.getElementById('user-box').value = val;
-  };
+  }
   
   document.getElementById('submit-btn').addEventListener('click', dVal);
 
