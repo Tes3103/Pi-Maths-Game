@@ -27,13 +27,13 @@ function runGame(gameType) {
     let num1 = Math.floor(Math.random() *20);
     let num2 = Math.floor(Math.random() *20);
 
-    if (gameType === "greater-than") {
+    if (gameType === "greaterthan") {
         displayGreaterthanQuestion(num1, num2);
 
-    } else if (gameType === "equals") {
+    } else if (gameType === "equal") {
         displayEqualQuestion(num1, num2);
 
-    } else if (gameType === "less-than") {
+    } else if (gameType === "lessthan") {
         displayLessthanQuestion(num1, num2);
 
     } else {
