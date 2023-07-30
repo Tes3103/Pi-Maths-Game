@@ -108,14 +108,7 @@ function calculateCorrectAnswer() {
     }
     
 }
-
-function dVal() {
-    let val = displayValue();
-    alert(val);
-    document.getElementById('user-box').value = val;
-  }
-  
-  document.getElementById('submit-btn').addEventListener('click', dVal);
+ 
 
 /**
  * Get the current score from the DOM and increments it by 1
