@@ -23,6 +23,10 @@ document.addEventListener("DOMContentLoaded", function() {
  */
 function runGame(gameType) {
 
+    document.getElementById("answer-box").value= "";
+    document.getElementById("answer-box").focus();
+
+
     // creates two random numbers between 1 and 20
     let num1 = Math.floor(Math.random() *20);
     let num2 = Math.floor(Math.random() *20);
