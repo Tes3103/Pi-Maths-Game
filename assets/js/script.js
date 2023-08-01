@@ -40,10 +40,7 @@ function runGame(gameType) {
     } else if (gameType === "lessthan") {
         displayLessthanQuestion(num1, num2);
 
-    } else {
-        alert(`unknown game type: ${gameType}`);
-        throw `unknown game type: ${gameType}. Aborting!`;
-    }
+    } 
 
 }
 
@@ -81,10 +78,10 @@ function checkAnswer() {
     let isCorrect = userAnswer === calculatedAnswer;
 
     if (isCorrect) {
-        alert("You are correct!")
+        alert("you are correct!");
         incremetScore();
     } else {
-        alert (`you answered ${userAnswer}. The correct answer was ${calculatedAnswer}!`);
+        alert("you are incorrect");
         incremetWrongAnswers();
     }
 
