@@ -81,6 +81,7 @@ To make the user more confortable the game will have another option to submit th
 * ipad [here](#wireframe-ipad.png)
 * Mobile [here](#wireframe-phone.png)
 ## Topography
+
 ## Testing
 ### Bugs
 | Bug | Status |
@@ -111,5 +112,7 @@ To make the user more confortable the game will have another option to submit th
 2. 
 3.  
 ## Credits
-### Images
+For the heading and paragraph, Roboto light 300 was used, which i think a good contrast and ease since it is one of the legible to read on screen.
 ## Acknowledgmets
+1. My mentor Mr. Rohit Sharma thank you for all the guidance and support
+2. For all slack contributers 

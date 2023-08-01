@@ -10,12 +10,12 @@ document.addEventListener("DOMContentLoaded", function() {
                 let gameType = this.getAttribute("data-type");
                 runGame(gameType);
             }
-        })
+        });
     }
 
     runGame("greaterthan");
 
-})
+});
 
 /**
  * The main game "loop", called when the script is first loaded
@@ -42,19 +42,6 @@ function runGame(gameType) {
 
     } 
 
-}
-
-function displayValue() {
-    let value = document.getElementById("answer-box").value;
-    if (value != null && value.toLowerCase() === 'true') {
-        return true;
-    } else if (value != null && value.toLowerCase() === 'false') {
-        return false;
-    } else {
-        document.getElementById("message").innerText = "Please enter true or false";
-        return null;
-
-    }
 }
 
 function getUserAnswer() {
