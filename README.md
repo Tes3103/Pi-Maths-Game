@@ -37,13 +37,14 @@ Access the link [here](#https://tes3103.github.io/Pi-Maths-Game/)
 ## Goal
 Pi math game website aims to help elementary students (from grade 1 to 4) to advance thir matematical computation. This site mainly works with comparison operations using the three matimatical signs (>, = , <) using easy to play rules with the focus of teaching kids using random numbers.
 ## Tecnologies Used
-* HTML5 
-* CSS3
-* JS
-* Blasmiq
-* Gitpod
-* GitHub
-* Chrome Developer Tools
+* [HTML5](#https://en.wikipedia.org/wiki/HTML5) for the structure of the website
+* [CSS3](#https://en.wikipedia.org/wiki/CSS) - for the styling.
+* [JS](#https://developer.mozilla.org/en-US/docs/Web/JavaScript) - functions and examples.
+* [Blasmiq](#https://balsamiq.com/)  - Used to create wireframes.
+* [Gitpod](#https://gitpod.io/workspaces) -  IDE used to create the site.
+* [GitHub](#https://github.com/) - To save and store the files for the website.
+* [Font Awesome](#https://fontawesome.com/) -  for importing the icones used in the website.
+* [Google Fonts](#https://fonts.google.com/) -  for importing tee font style selected for the website.
 ## UX
 ## Target Audience
 The main target audience for this game would be childrens who are  in elementary school, just start lerning mathematical operation. The random numbers used to compare are easy to guss based on their number knowlwdege and the result score will encourage them to be more accurate by forcing them to be in a competitive mood with their fellow students.
@@ -77,10 +78,14 @@ The main target audience for this game would be childrens who are  in elementary
 ## Future Features
 To make the user more confortable the game will have another option to submit the answer by using only the enter key and adding manual instructions to guide the user how to play the game and all the rules need to be followed.
 ## Wireframes
-* Desktop [here](#wireframe/desktop-wireframe.png)
-* ipad [here](#wireframe-ipad.png)
-* Mobile [here](#wireframe-phone.png)
+* Desktop 
+![here](wireframe/desktop-wireframe.png)
+* ipad 
+![here](wireframe/wireframe-ipad.png)
+* Mobile 
+![here](wireframe/wireframe-phone.png)
 ## Topography
+Goggle Font link, was used to import the choosen, Roboto font light 300 wt., it is used  heading, paragraph and input text since it is one of the most distinct to read on screen.
 
 ## Testing
 ### Bugs
