@@ -25,14 +25,14 @@
     <div class="game-area">
         <div class="controles-area">
             
-            <button data-type="greaterthan" class="btn btn--big btn--green">
+            <button data-type="greaterthan" class="btn btn--big btn--green" aria-label="greaterthan">
                 <i class="fa-solid fa-greater-than"></i>
             </button>
-            <button data-type="equal" class="btn btn--big btn--red">
+            <button data-type="equal" class="btn btn--big btn--red" aria-label="equal">
                 <i class="fa-solid fa-equals"></i>
 
             </button>
-            <button data-type="lessthan" class="btn btn--big btn--green">
+            <button data-type="lessthan" class="btn btn--big btn--green" aria-label="lessthan">
                 <i class="fa-solid fa-less-than"></i>
 
             </button>
@@ -48,7 +48,7 @@
             <span>=</span>
             <p class="answer-message">Enter Answer:</p>
             <span id="message"></span>
-            <input id="answer-box" type="text">
+            <label name="Answer box"><input id="answer-box" type="text"></label>
             
             
         </div>
@@ -58,8 +58,8 @@
     </div>
     <!-- score area -->
     <div class="score-area">
-        <p class="scores">Correct Answers <span id="correct">0</span></p>
-        <p class="scores">Incorrect Answers <span id="incorrect">0</span></p>
+        <label class="scores">Correct Answers <span id="correct">0</span></label>
+        <label class="scores">Incorrect Answers <span id="incorrect">0</span></label>
     </div>
     <!-- script for script.js link -->
     <script src="assets/js/script.js"></script>

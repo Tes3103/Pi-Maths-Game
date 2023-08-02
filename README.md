@@ -100,9 +100,9 @@ Goggle Font link, was used to import the choosen, Roboto font light 300 wt., it 
 ### Bugs
 | Bug | Status |
 | ---| ---|
-| small screen size | by adding div |
-|    1| 2 |
-| 3 | 4|
+| some texts are disappeared when testing responsiveness| adressed by debuging CSS error  |
+|   texts overflow for smaller screen  | adressed by html error debuging |
+| the correct answer mixed with the incorrect answer  | fixed with putting the right equal sign|
 
 ### Known Issues
 * still there are some warnings persist  from the automated testing, but these warnings dose not have any issue with the full functionality of the site.
@@ -119,9 +119,13 @@ Manual testing was performed using ipad mini in Goggle Chrome
 ### Testing User Stories
 1. I would like to paly the game with ease and know what to expect when i press the key,this is achieved as follows,
   * the user will be aware of the result he score and the correct answer with the pop-up message and the user can easly select the type of game desired to play by clicking the button from the three options. 
+
+![user answer with score](documentation/user-story-score.png)
 2. I would like to know if am correct or not when i play the game, this is achieved as follows,
  * when the user submits the answer using the submit button, the pop-up alert will confirm if the user answer was correct or incorrect with a message "you are correct"
  or "you are incorrect, please try"
+
+ ![correct answer conformation](documentation/user-story.png)
  
 ## Deployment 
 * The stapes to follow are the following

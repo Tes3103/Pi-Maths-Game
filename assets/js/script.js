@@ -43,7 +43,7 @@ function runGame(gameType) {
     } 
 
 }
-
+// get user answer from the answer box
 function getUserAnswer() {
     let value = document.getElementById("answer-box").value;
     if (value != null && value.toLowerCase() === 'true') {
@@ -56,6 +56,8 @@ function getUserAnswer() {
 
     }
 }
+
+// check answer function
 function checkAnswer() {
     let userAnswer = getUserAnswer();
     let calculatedAnswer = calculateCorrectAnswer();
@@ -86,13 +88,13 @@ function calculateCorrectAnswer() {
     let operator = document.getElementById('operator').innerText;
     if (operator === ">") {
         return operand1 > operand2;
-    } else if (operator === "=") {
+    } else if (operator === "===") {
         return operand1 = operand2;
     } else if (operator === "<") {
         return operand1 < operand2;
     } else {
         alert (`unimplemented operator ${operator}`);
-        throw `unimplemented operator ${operator}. Aborting!`;
+        
     }
     
 }
@@ -130,7 +132,7 @@ function displayEqualQuestion(operand1, operand2) {
 
     document.getElementById('operand1').textContent = operand1;
     document.getElementById('operand2').textContent = operand2;
-    document.getElementById('operator').textContent = "=";
+    document.getElementById('operator').textContent = "===";
     
 }
 
