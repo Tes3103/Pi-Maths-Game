@@ -88,6 +88,14 @@ To make the user more confortable the game will have another option to submit th
 Goggle Font link, was used to import the choosen, Roboto font light 300 wt., it is used  heading, paragraph and input text since it is one of the most distinct to read on screen.
 
 ## Testing
+## Automated Testing
+[W3C](#https://validator.w3.org/) was used to validate the HTML and  CSS. and the results are as follows,
+  * [index.html](#documentation/html-validator-result.png) - passed
+  * [style.css](#documentation/css-validator.png) - passed
+
+* [Lighthouse](#/documnetation/lightho.png)
+
+[jshint](#https://jshint.com/) was used to validate the JavaScript 
 ### Bugs
 | Bug | Status |
 | ---| ---|
@@ -96,9 +104,18 @@ Goggle Font link, was used to import the choosen, Roboto font light 300 wt., it 
 | 3 | 4|
 
 ### Known Issues
-*
-* 
-* 
+* still there are some warnings persist  from the automated testing, but these warnings dose not have any issue with the full functionality of the site.
+* most of the issues with small screen size have ovecomed, as per my knoweledge capacity but still need some improvement. 
+## Manual Testing
+Manual testing was performed using ipad mini in Goggle Chrome
+* when the site is live, as expected, the default greater-than game will be acive, when the user submits the answer,
+
+  * if the answer was correct, the pop-up button will confirm the user with a message "you are correct" and when the user clicks the ok button it will  increment the score by one.
+  * if the answer was incorrect, the pop-up button  will raise a meaaasage "you are incorrect " and increment the wrong answer score by one
+
+* when a user want to choose another game using the control button, as epected the desired game function well,  with the same procedure as metioned above   
+
+  
 ## Deployment 
 * The stapes to follow are the following
 1. Login or signup to GitHub
@@ -107,17 +124,14 @@ Goggle Font link, was used to import the choosen, Roboto font light 300 wt., it 
 4. Scroll down to the Pages option on the left-hand side and click into it.
 5. Select main in the Source drop down box below the 'Build and deployment' title and click save.
 
-## Local Deployment
-* To Fork 
+### To Fork 
 1. Login/signup to GitHub.
 2. Locate the relevant repository 
 3. Click on the 'Fork' button in the upper left.
-* To Clone
-1. 
-2. 
-3.  
+  
 ## Credits
-For the heading and paragraph, Roboto light 300 was used, which i think a good contrast and ease since it is one of the legible to read on screen.
+* For the heading and paragraph, Roboto light 300 was used, which i think a good contrast and ease since it is one of the legible to read on screen.
+* Most ideas and inspiration for my website was taken from the Love Math project. 
 ## Acknowledgmets
 1. My mentor Mr. Rohit Sharma thank you for all the guidance and support
 2. For all slack contributers 
