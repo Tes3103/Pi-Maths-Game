@@ -102,7 +102,7 @@ Goggle Font link, was used to import the choosen, Roboto font light 300 wt., it 
 * [Lighthouse](documnetation/lightho.png)
 
 [jshint](https://jshint.com/) was used to validate Script.js file and the result is as follows,
-  * [script.js](documentation/jshint.png) 
+  * [script.js](documentation/new-jshint.png) 
 ### Bugs
 | Bug | Status |
 | ---| ---|

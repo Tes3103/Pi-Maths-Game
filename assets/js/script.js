@@ -89,7 +89,7 @@ function calculateCorrectAnswer() {
     if (operator === ">") {
         return operand1 > operand2;
     } else if (operator === "===") {
-        return operand1 = operand2;
+        return operand1 === operand2;
     } else if (operator === "<") {
         return operand1 < operand2;
     } else {
