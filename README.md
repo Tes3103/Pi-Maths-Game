@@ -90,12 +90,13 @@ Goggle Font link, was used to import the choosen, Roboto font light 300 wt., it 
 ## Testing
 ## Automated Testing
 [W3C](#https://validator.w3.org/) was used to validate the HTML and  CSS. and the results are as follows,
-  * [index.html](#documentation/html-validator-result.png) - passed
-  * [style.css](#documentation/css-validator.png) - passed
+  * [index.html](#documentation/html-validator-result.png) 
+  * [style.css](#documentation/css-validator.png) 
 
 * [Lighthouse](#/documnetation/lightho.png)
 
-[jshint](#https://jshint.com/) was used to validate the JavaScript 
+[jshint](#https://jshint.com/) was used to validate Script.js file and the result is as follows,
+  * [script.js](#documentation/jshint.png) 
 ### Bugs
 | Bug | Status |
 | ---| ---|
@@ -113,9 +114,15 @@ Manual testing was performed using ipad mini in Goggle Chrome
   * if the answer was correct, the pop-up button will confirm the user with a message "you are correct" and when the user clicks the ok button it will  increment the score by one.
   * if the answer was incorrect, the pop-up button  will raise a meaaasage "you are incorrect " and increment the wrong answer score by one
 
-* when a user want to choose another game using the control button, as epected the desired game function well,  with the same procedure as metioned above   
+* when a user want to choose another game using the control button, as epected the desired game function well,  with the same procedure as metioned above 
 
-  
+### Testing User Stories
+1. I would like to paly the game with ease and know what to expect when i press the key,this is achieved as follows,
+  * the user will be aware of the result he score and the correct answer with the pop-up message and the user can easly select the type of game desired to play by clicking the button from the three options. 
+2. I would like to know if am correct or not when i play the game, this is achieved as follows,
+ * when the user submits the answer using the submit button, the pop-up alert will confirm if the user answer was correct or incorrect with a message "you are correct"
+ or "you are incorrect, please try"
+ 
 ## Deployment 
 * The stapes to follow are the following
 1. Login or signup to GitHub
@@ -134,4 +141,4 @@ Manual testing was performed using ipad mini in Goggle Chrome
 * Most ideas and inspiration for my website was taken from the Love Math project. 
 ## Acknowledgmets
 1. My mentor Mr. Rohit Sharma thank you for all the guidance and support
-2. For all slack contributers 
+2. For all slack community contributers 
