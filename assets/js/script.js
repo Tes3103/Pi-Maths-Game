@@ -68,7 +68,7 @@ function checkAnswer() {
         alert("you are correct!");
         incremetScore();
     } else {
-        alert("you are incorrect");
+        alert("you are incorrect, please try again!");
         incremetWrongAnswers();
     }
 
