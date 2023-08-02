@@ -37,14 +37,14 @@ Access the link [here](#https://tes3103.github.io/Pi-Maths-Game/)
 ## Goal
 Pi math game website aims to help elementary students (from grade 1 to 4) to advance thir matematical computation. This site mainly works with comparison operations using the three matimatical signs (>, = , <) using easy to play rules with the focus of teaching kids using random numbers.
 ## Tecnologies Used
-* [HTML5](#https://en.wikipedia.org/wiki/HTML5) - for the structure of the website
-* [CSS3](#https://en.wikipedia.org/wiki/CSS) - for styling.
-* [JS](#https://developer.mozilla.org/en-US/docs/Web/JavaScript) - functions and examples.
-* [Blasmiq](#https://balsamiq.com/)  - Used to create wireframes.
-* [Gitpod](#https://gitpod.io/workspaces) -  IDE used to create the site.
-* [GitHub](#https://github.com/) - To save and store the files for the website.
-* [Font Awesome](#https://fontawesome.com/) -  for importing the icones used in the website.
-* [Google Fonts](#https://fonts.google.com/) -  for importing the font style selected for the website.
+* [HTML5](https://en.wikipedia.org/wiki/HTML5) - for the structure of the website
+* [CSS3](https://en.wikipedia.org/wiki/CSS) - for styling.
+* [JS](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - functions and examples.
+* [Blasmiq](https://balsamiq.com/)  - Used to create wireframes.
+* [Gitpod](https://gitpod.io/workspaces) -  IDE used to create the site.
+* [GitHub](https://github.com/) - To save and store the files for the website.
+* [Font Awesome](https://fontawesome.com/) -  for importing the icones used in the website.
+* [Google Fonts](https://fonts.google.com/) -  for importing the font style selected for the website.
 ## UX
 ## Target Audience
 The main target audience for this game would be childrens who are  in elementary school, just start lerning mathematical operation. The random numbers used to compare are easy to guss based on their number knowlwdege and the result score will encourage them to be more accurate by forcing them to be in a competitive mood with their fellow students.
@@ -78,6 +78,7 @@ The main target audience for this game would be childrens who are  in elementary
 ## Future Features
 To make the user more confortable the game will have another option to submit the answer by using only the enter key and adding manual instructions to guide the user how to play the game and all the rules need to be followed.
 ## Wireframes
+
 * Desktop 
 
 ![here](wireframe/desktop-wireframe.png)
@@ -94,14 +95,14 @@ Goggle Font link, was used to import the choosen, Roboto font light 300 wt., it 
 
 ## Testing
 ## Automated Testing
-[W3C](#https://validator.w3.org/) was used to validate the HTML and  CSS. and the results are as follows,
-  * [index.html](#documentation/html-validator-result.png) 
-  * [style.css](#documentation/css-validator.png) 
+[W3C](https://validator.w3.org/) was used to validate the HTML and  CSS. and the results are as follows,
+  * [index.html](documentation/html-validator-result.png) 
+  * [style.css](documentation/css-validator.png) 
 
-* [Lighthouse](#/documnetation/lightho.png)
+* [Lighthouse](documnetation/lightho.png)
 
-[jshint](#https://jshint.com/) was used to validate Script.js file and the result is as follows,
-  * [script.js](#documentation/jshint.png) 
+[jshint](https://jshint.com/) was used to validate Script.js file and the result is as follows,
+  * [script.js](documentation/jshint.png) 
 ### Bugs
 | Bug | Status |
 | ---| ---|
